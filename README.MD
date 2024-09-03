@@ -54,4 +54,12 @@ l'adresse est généralement de type htpps://127.8.8.1:8000
 
 ### Création d'un contrôleur 
 
-symfony controle maker:install 
+symfony console make:controller
+
+php bin/console make:controller
+
+le nom doit être en PascaleCase terminé par controller, mais symfony se charge de le corriger en cas d'oubli.
+
+php bin/console make:constroller HomeController
+created: src/Controller/HomeController
+created: template

@@ -5,8 +5,10 @@
 {% block body %}
     <dib id="container">
     <h1>{{title}}</h1>
-    {# inclusion depuis la racine du projet (template) #}
-    {% include 'home/menu.html.twig'%}    
+        <nav>
+        {#On utilise path(nom_du_chemin) lorsqu'on veut un lien vers une page #}
+        <a href="{{ path('Homepage) }}">Homepage</a>
+        </nav>
     </div>        
     
 {% endblock %}
