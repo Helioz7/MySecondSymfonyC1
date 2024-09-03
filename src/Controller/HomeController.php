@@ -20,7 +20,7 @@ class HomeController extends AbstractController
     public function aboutMe(): Response
     {
         return $this->render('home/index.html.twig', [
-            'title' => 'about me',
+            'title' => 'About me',
         ]);
     }
 }
